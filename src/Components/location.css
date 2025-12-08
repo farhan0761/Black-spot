@@ -1,0 +1,101 @@
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;       
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.location-card {
+  display: flex;
+  width: 48%;            
+  height: 120px;   
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  background-color: #f9f9f9;
+}
+
+.location-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.image-background {
+  width: 200px;
+  height: 100%;
+  background-image: url('demo-2.jpg'); 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.location-icon {
+  position: absolute;
+  top: 3px;    
+  right: 8px;  
+  font-size: 15px;
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  padding: 6px;
+}
+
+/* Text content */
+.card-content {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.card-title {
+  font-size: 18px;
+  margin: 0 0 5px 0;
+  color: #01255A;
+}
+
+.card-details {
+  font-size: 13px;
+  color: #555;
+}
+
+
+
+
+@media (max-width: 1024px) {
+  .location-card {
+    width: 100%;        
+    height: 120px;
+  }
+
+  .image-background {
+    width: 150px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .location-card {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .image-background {
+    width: 100%;
+    height: 180px;
+  }
+
+  .card-content {
+    padding: 15px;
+  }
+
+  .location-icon {
+    top: 10px;
+    right: 10px;
+  }
+}

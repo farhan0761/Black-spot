@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Midsec-container{
+    display: flex;
+    width: 100%;
+    padding: 0 3%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+.Midsec-heading{
+    width: 45%;
+}
+
+.Midsec-image{
+    width: 50%;
+}
+
+.Midsec-heading p{
+    font-weight: bold;
+    font-size: 40px;
+    color: #01255A;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+
+.Midsec-heading span{
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 22%;
+    color: #01255A;
+}
+
+.lab{
+    display: block;
+    margin-top: 30px;
+    color: #555;
+    font-size: 20px;
+}
+
+.Midsec-heading button{
+    margin-top: 50px;
+    padding: 18px 25px;
+    color: white;
+    background-color: #01255A;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 35%;
+    font-size: 16px;
+}
+
+
+.Midsec-image img{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 15px;                  
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1); 
+}
+
+
+
+@media (min-width: 1024px) and (max-width: 1159px){
+
+    .Midsec-container{
+        padding: 0 4%;
+        gap: 35px;
+    }
+
+    .Midsec-heading{
+        width: 48%;
+    }
+
+    .Midsec-image{
+        width: 48%;
+    }
+
+    .Midsec-heading p,
+    .Midsec-heading span{
+        font-size: 27px;
+        margin-left: 20px;
+        font-weight: bold;
+    }
+    .Midsec-heading span{
+        margin-left: 20%;
+    }
+
+    .lab{
+        font-size: 15px;
+    }
+
+    .Midsec-heading button{
+        margin-left: 30%;
+        font-size: 15px;
+        padding: 16px 22px;
+    }
+}
+
+
+
+
+
+@media (min-width: 1160px) and (max-width: 1300px){
+
+    .Midsec-container{
+        padding: 0 4%;
+        gap: 35px;
+    }
+
+    .Midsec-heading{
+        width: 48%;
+    }
+
+    .Midsec-image{
+        width: 48%;
+    }
+
+    .Midsec-heading p,
+    .Midsec-heading span{
+        font-size: 30px;
+        margin-left: 20px;
+        font-weight: bold;
+    }
+    .Midsec-heading span{
+        margin-left: 20%;
+    }
+
+    .lab{
+        font-size: 15px;
+    }
+
+    .Midsec-heading button{
+        margin-left: 30%;
+        font-size: 15px;
+        padding: 16px 22px;
+    }
+}
+
+
+
+
+
+@media (min-width: 1300px) and (max-width: 1440px){
+
+    .Midsec-container{
+        padding: 0 5%;
+        gap: 45px;
+    }
+
+    .Midsec-heading{
+        width: 46%;
+    }
+
+    .Midsec-image{
+        width: 50%;
+    }
+
+    .Midsec-heading p,
+    .Midsec-heading span{
+        font-size: 32px;
+        margin-left: 0;
+    }
+
+    .Midsec-heading span{
+        margin-left: 20%;   
+    }
+
+    .lab{
+        font-size: 15px;
+        margin-left: 20px;
+    }
+
+    .Midsec-heading button{
+        margin-left: 25%;
+        font-size: 16px;
+        padding: 18px 26px;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1550px){
+
+    .Midsec-container{
+        padding: 0 6%;
+        gap: 55px;
+    }
+
+    .Midsec-heading{
+        width: 45%;
+    }
+
+    .Midsec-image{
+        width: 50%;
+    }
+
+    .Midsec-heading p,
+    .Midsec-heading span{
+        font-size: 35px;
+        margin-left: 0;
+    }
+
+    .Midsec-heading span{
+        margin-left: 18%;
+    }
+
+    .lab{
+        font-size: 16px;
+        margin-left: 25px;
+    }
+
+    .Midsec-heading button{
+        margin-left: 23%;
+        font-size: 17px;
+        padding: 20px 28px;
+    }
+}
+
+
+
+
+@media (max-width: 768px){
+
+    .Midsec-container{
+        flex-direction: column-reverse;  
+        text-align: center;
+        gap: 25px;
+    }
+
+    .Midsec-heading,
+    .Midsec-image{
+        width: 100%;
+    }
+
+    .Midsec-image{
+        padding: 0 15px;  
+    }
+
+    .Midsec-image img{
+        border-radius: 12px;
+    }
+
+    .Midsec-heading{
+        padding: 0 15px;
+    }
+
+    .Midsec-heading p,
+    .Midsec-heading span{
+        font-size: 26px;
+        margin-left: 0;
+    }
+
+    .lab{
+        font-size: 18px;
+    }
+
+    .Midsec-heading button{
+        width: 80%;
+        margin-left: 0;
+    }
+}
