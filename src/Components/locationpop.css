@@ -1,0 +1,186 @@
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+
+
+.popup-box {
+  background: white;
+  width: 96%;
+  max-width: 1400px;
+  max-height: 95vh;
+  padding: 28px;
+  overflow-y: auto;
+  
+  position: relative;
+  animation: pop 0.25s ease;
+}
+
+@keyframes pop {
+  from { transform: scale(0.85); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+.location-section-title {
+  text-align: center;
+  color: #01255A;
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+
+
+.location-card {
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.image-background {
+  width: 60px;
+  height: 60px;
+  background: #01255A;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-icon {
+  font-size: 22px;
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.card-content p {
+  font-size: 16px;
+  margin: 0;
+}
+
+
+.card-de {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-de .card-details{
+    font-size: 20px;
+}
+
+.card-de button {
+  background: #01255A;
+  color: white;
+  padding: 7px 18px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+@media (max-width: 1350px){
+
+.card-de .card-details{
+    font-size: 15px;
+}
+}
+
+@media (max-width: 1250px){
+
+.card-de .card-details{
+    font-size: 12px;
+}
+}
+
+
+@media (max-width: 768px) {
+
+  .popup-box {
+    width: 95% !important;
+    max-height: 88vh !important;
+    padding: 22px !important;
+  }
+
+  .location-card {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .card-content {
+    align-items: center;
+  }
+
+  .card-de {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .card-de button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+
+/* VERY SMALL MOBILE */
+@media (max-width: 450px) {
+
+  .popup-box {
+    padding: 18px !important;
+  }
+
+  .location-section-title {
+    font-size: 20px;
+  }
+
+  .image-background {
+    width: 52px;
+    height: 52px;
+  }
+
+  .location-icon {
+    font-size: 20px;
+  }
+}

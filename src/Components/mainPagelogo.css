@@ -101,6 +101,17 @@
     .hamburger {
         display: flex;
     }
+    .site-name p {
+    margin-left: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+.site-name label {
+    color: rgb(237, 234, 234);
+    font-size: 10px;
+    margin-left: 12px;
+}
 
     
     .nav-item {

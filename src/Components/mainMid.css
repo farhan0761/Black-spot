@@ -263,5 +263,7 @@
     .Midsec-heading button{
         width: 80%;
         margin-left: 0;
+        font-size: 12px;
+        padding: 12px 15px;
     }
 }

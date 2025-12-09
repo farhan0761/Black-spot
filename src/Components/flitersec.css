@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+.main-flt{
+  background-color: whitesmoke;
+  width: 95%;
+  margin-left: 2.5%;
+  border-radius: 10px;
+  
+}
 
 .filter-container {
   width: 100%;
@@ -20,8 +27,9 @@
   color: #01255A;
   font-weight: bold;
   font-size: 40px;
-  margin: 80px 0 20px 0;
+  margin:30px;
   text-align: center;   
+ padding-top: 40px;
 }
 
 .dropdown {
